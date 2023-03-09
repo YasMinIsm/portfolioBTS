@@ -7,6 +7,15 @@ body {
 a {
     text-decoration: none;
 }
+.et-hero-tabs{
+  /* background-image:  url(bg.jpg) !important; */
+  /* background-color: #493563;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat; */
+  background: rgb(98,59,115);
+background: linear-gradient(90deg, rgba(98,59,115,0.9248074229691877) 0%, rgba(115,75,134,0.7371323529411764) 35%, rgba(182,154,232,0.04245448179271705) 100%);
+}
 .et-hero-tabs, .et-slide {
     display: flex;
     flex-direction: column;
@@ -192,48 +201,59 @@ body .entries .entry:nth-child(2n) .title.big:before {
 	 padding-bottom: 82px;
 }
  .containerName {
-	 font-weight: 300;
+	 font-weight: bold;
+   font-size: 40px;
 }
  .block-w {
 	 overflow: hidden;
 	 flex: 1 1 auto;
 	 float: left;
 	 background-color: #f2f2f2;
-	 width: 19%;
-	 height: 300px;
+	 width: 12%;
+	 height: 400px;
 	 transition: 0.3s ease-in-out;
 }
  .active {
-	 width: 58%;
+	 width: 40%;
 }
  .block {
 	 display: flex;
 	 flex-flow: row wrap;
 }
  .block1 {
-	 background-image: url(http://i.imgur.com/Etx8s9g.jpg);
+	 background-image: url(html.png);
 	 background-size: cover;
 	 -webkit-background-size: cover;
 }
  .block2 {
-	 background-image: url(http://i.imgur.com/X5CqPG8.jpg);
+	 background-image: url(css.png);
 	 background-size: cover;
 	 -webkit-background-size: cover;
 }
  .block3 {
-	 background: url(http://i.imgur.com/NayL3CM.jpg);
+	 background: url(js.png);
 	 background-size: cover norepeat;
 	 -webkit-background-size: cover;
 }
  .block4 {
-	 background-image: url(http://i.imgur.com/JuyX2h2.jpg);
+	 background-image: url(php.png);
 	 background-size: cover;
 	 -webkit-background-size: cover;
 }
  .block5 {
-	 background-image: url(http://i.imgur.com/s4WkGRu.jpg);
+	 background-image: url(c.png);
 	 background-size: cover;
 	 -webkit-background-size: cover;
+}
+.block6 {
+  background-image: url(python.png);
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.block7 {
+  background-image: url(sql.png);
+  background-size: cover;
+  -webkit-background-size: cover;
 }
  .back {
 	 background-color: rgba(0, 0, 0, 0.3);
@@ -242,6 +262,8 @@ body .entries .entry:nth-child(2n) .title.big:before {
 	 width: 100%;
 	 transition: 0.3s ease-in-out;
 	 cursor: pointer;
+   height: 400px;
+
 }
  .block-w:hover .back {
 	 background: rgba(0, 0, 0, 0.6);
@@ -280,7 +302,7 @@ body .entries .entry:nth-child(2n) .title.big:before {
 }
 
 .item-name {
-  background: #1d0236;
+  background: #341d49;
   height: 43px;
   border-radius: 43px;
   position: relative;
@@ -446,11 +468,11 @@ body .entries .entry:nth-child(2n) .title.big:before {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 .c2 {
-  background:rgb(61, 37, 92);
+  background:#604775;
   border-radius: 63% 37% 25% 75% / 71% 30% 70% 29%;
 }
 .c3 {
-  background: #1d0236;
+  background: #341d49;
   border-radius: 57% 43% 40% 60% / 71% 48% 52% 29%;
 }
 .articles{
@@ -1396,7 +1418,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	max-width: 100%;
 	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
 	padding: 10px;
-
+  text-align: left;
 	border-radius: 30px;
 }
 
@@ -1414,7 +1436,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	margin-bottom: 1rem;
 }
 
-::marker {
+.source ::marker {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
 }
 
@@ -1426,3 +1448,4 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
 }
 
+/* footer */

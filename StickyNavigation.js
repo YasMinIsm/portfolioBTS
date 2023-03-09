@@ -68,6 +68,7 @@ class StickyNavigation {
 		}
 		$('.et-hero-tab-slider').css('width', width);
 		$('.et-hero-tab-slider').css('left', left);
+		
 	}
 	
 }
