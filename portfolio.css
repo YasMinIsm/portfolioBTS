@@ -1903,7 +1903,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	 position: relative;
 	 text-align: left;
 	 transition: all 0.3s 0s ease-in;
-	 z-index: 1;
+	 z-index: 2;
 }
  .red-card img {
 	 max-width: 300px;
